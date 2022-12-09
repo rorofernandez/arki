@@ -1,0 +1,16 @@
+[
+    {
+        "clientId":1,
+        "firstName":"John",
+        "lastName":"Snow",
+        "email":"john.snow@gmail.com",
+        "contact":"9849485545"
+    },
+    {
+        "clientId":2,
+        "firstName":"Jane",
+        "lastName":"Good",
+        "email":"jane.goodw@gmail.com",
+        "contact":"1289004999"
+    }
+]

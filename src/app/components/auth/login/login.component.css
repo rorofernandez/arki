@@ -1,0 +1,50 @@
+.bg {
+    background-image: url('/assets/img/bg-arki.jpg'); 
+    background-size: cover;
+}
+
+h1 {
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8em;
+}
+
+h3, .btn {
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+.arkiheader{
+    margin-top: 5%;
+    text-align: center;
+    color: #fff;
+}
+.form-group .input-group .input[type="text"]:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2em;
+    text-align: center;
+    width: 60%;
+}
+
+input {
+    text-align: center;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+}
