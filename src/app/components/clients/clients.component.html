@@ -27,7 +27,7 @@
                   <td>{{client["email"]}}</td>
                   <td>{{client["contact"]}}</td>
                   <td>
-                    <button type="button" class="btn btn-sm btn-dark me-1">Edit</button>
+                    <button type="button" class="btn btn-sm btn-dark me-1" (click)="openClientDialog(addClientModal, client)">Edit</button>
                   </td>
                 </tr>
               </tbody>
@@ -36,5 +36,5 @@
 </div>
 
 <ng-template #addClientModal let-modal class="bg-modal">
-  <app-addclient></app-addclient>
+  <app-addclient [clientInfo]="clientInfo"></app-addclient>
 </ng-template>

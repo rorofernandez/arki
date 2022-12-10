@@ -7,3 +7,8 @@ h1 {
     font-style: normal;
     font-size: 1.5em;
 }
+
+body {
+    background: url('/assets/img/bg-page.jpg') no-repeat bottom right; 
+    height: 100vh;
+}
