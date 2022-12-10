@@ -31,7 +31,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     BrowserModule,
     RouterModule.forRoot([
       { path: '', pathMatch: 'full', redirectTo: 'home' },
-      { path: 'home', component: DashboardComponent },
+      { path: 'home', component: LoginComponent },
     ]),
     AppRoutingModule,
     FormsModule,
