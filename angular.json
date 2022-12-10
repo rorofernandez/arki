@@ -92,7 +92,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_ modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_ modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

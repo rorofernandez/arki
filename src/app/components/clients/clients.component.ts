@@ -21,7 +21,7 @@ export class ClientsComponent implements OnInit {
   }
 
   openClientDialog(modelRef:any, clientObj = null) {
-    console.log(clientObj);    
+    //console.log(clientObj);    
     this.modalService.open(modelRef);
     this.clientInfo = clientObj;
   }

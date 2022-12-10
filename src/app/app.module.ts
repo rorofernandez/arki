@@ -13,7 +13,7 @@ import { MeetingsComponent } from './components/meetings/meetings.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddclientComponent } from './components/clients/addclient/addclient.component';
 import { RouterModule } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AddmeetingComponent } from './components/meetings/addmeeting/addmeeting.component';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     FooterComponent,
     ClientsComponent,
     MeetingsComponent,
-    AddclientComponent
+    AddclientComponent,
+    AddmeetingComponent
   ],
   imports: [
     BrowserModule,

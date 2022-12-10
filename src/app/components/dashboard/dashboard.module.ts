@@ -10,7 +10,7 @@ import { MeetingsComponent } from '../meetings/meetings.component';
 
 @NgModule({
   declarations: [
-    MeetingsComponent
+    
   ],
   imports: [
     CommonModule
