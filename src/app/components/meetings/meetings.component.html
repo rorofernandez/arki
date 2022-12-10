@@ -28,7 +28,7 @@
                   <td>{{ list ["time"] }}</td>
                   <td>{{ list ["participants"] }}</td>
                   <td>
-                    <button type="button" class="btn btn-sm btn-dark me-1">Edit</button>
+                    <button type="button" class="btn btn-sm btn-dark me-1" (click)="openMeetingDialog(addMeetingModal, list)">Edit</button>
                     <button type="button" class="btn btn-sm btn-danger">Cancel</button>
                   </td>
                 </tr>
@@ -39,5 +39,5 @@
 </div>
 
 <ng-template #addMeetingModal let-modal class="bg-modal">
-  <app-addmeeting></app-addmeeting>
+  <app-addmeeting [meetingInfo]="meetingInfo" (closeModel)="closeModel(addMeetingModal)"></app-addmeeting>
 </ng-template>

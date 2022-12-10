@@ -15,8 +15,7 @@ export class AddclientComponent implements OnInit {
   tempFile: any;
 
   @Input() public clientInfo:any;
-  @Output()
-  public closeModel: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public closeModel: EventEmitter<void> = new EventEmitter<void>();
 
   constructor( private modalService: NgbModal, private fb:FormBuilder) { }
 

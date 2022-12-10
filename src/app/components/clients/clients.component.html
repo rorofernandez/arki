@@ -36,5 +36,5 @@
 </div>
 
 <ng-template #addClientModal let-modal class="bg-modal">
-  <app-addclient [clientInfo]="clientInfo"></app-addclient>
+  <app-addclient [clientInfo]="clientInfo" (closeModel)="closeModel(addClientModal)"></app-addclient>
 </ng-template>
