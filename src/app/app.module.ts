@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { LoginComponent } from './components/auth/login/login.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MeetingsComponent } from './components/meetings/meetings.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MeetingsComponent } from './components/meetings/meetings.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddclientComponent } from './components/clients/addclient/addclient.component';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -19,18 +21,23 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     AuthComponent,
     LoginComponent,
-    DashboardComponent,
     NavbarComponent,
     FooterComponent,
+    ClientsComponent,
     MeetingsComponent,
-    ClientsComponent
+    AddclientComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([
+      { path: '', pathMatch: 'full', redirectTo: 'home' },
+      { path: 'home', component: DashboardComponent },
+    ]),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

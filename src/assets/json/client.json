@@ -4,13 +4,20 @@
         "firstName":"John",
         "lastName":"Snow",
         "email":"john.snow@gmail.com",
-        "contact":"9849485545"
+        "contact":"909.455.6788"
     },
     {
         "clientId":2,
         "firstName":"Jane",
-        "lastName":"Good",
-        "email":"jane.goodw@gmail.com",
-        "contact":"1289004999"
+        "lastName":"Hall",
+        "email":"jane.hall@gmail.com",
+        "contact":"555.808.9088"
+    },
+    {
+        "clientId":3,
+        "firstName":"Zang",
+        "lastName":"Ziyi",
+        "email":"zang@ziyi.com",
+        "contact":"210.192.8899"
     }
 ]

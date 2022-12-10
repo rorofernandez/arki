@@ -1,0 +1,23 @@
+[
+    {
+    "meetingId":1,
+    "topic":"Holywood Marketplace Floor Planning",
+    "date":"12/12/2022",
+    "time":"10:30 AM",
+    "participants":"Johnny Wood, Camilla White, Brett Johnson"
+},
+{
+    "meetingId":2,
+    "topic":"Grand Park Art Installation",
+    "date":"12/15/2022",
+    "time":"11:15 AM",
+    "participants":"Jane Molly"
+},
+{
+    "meetingId":3,
+    "topic":"LACMA Lights Renovation",
+    "date":"12/18/2022",
+    "time":"9:30 AM",
+    "participants":"Cameron Burley"
+}
+]

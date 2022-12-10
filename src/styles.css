@@ -1,2 +1,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url("https://use.typekit.net/gvs0nln.css");
+
+h1 {
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+}

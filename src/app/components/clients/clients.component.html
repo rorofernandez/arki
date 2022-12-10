@@ -1,7 +1,12 @@
 <div class="container">
-    <div class="row mt-5">
-        <h1>Clients</h1>   
-    </div>
+  <div class="row my-5">
+    <div class="col-10">
+        <h1>Clients</h1> 
+    </div>    
+    <div class="col-2">
+        <button type="button" class="btn btn-dark float-right mt-3" (click)="openClientDialog(addClientModal)">Add Client</button>
+    </div>    
+</div>
     <div class="row">
         <table class="table table-striped">
             <thead>
@@ -11,6 +16,7 @@
                   <th scope="col">Last</th>
                   <th scope="col">Email</th>
                   <th scope="col">Contact</th>
+                  <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
@@ -20,9 +26,15 @@
                   <td>{{client["lastName"]}}</td>
                   <td>{{client["email"]}}</td>
                   <td>{{client["contact"]}}</td>
+                  <td>
+                    <button type="button" class="btn btn-sm btn-dark me-1">Edit</button>
+                  </td>
                 </tr>
               </tbody>
         </table>
     </div>
-
 </div>
+
+<ng-template #addClientModal let-modal class="bg-modal">
+  <app-addclient></app-addclient>
+</ng-template>
