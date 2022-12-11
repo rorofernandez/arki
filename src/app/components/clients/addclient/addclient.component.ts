@@ -13,6 +13,8 @@ export class AddclientComponent implements OnInit {
   addClientForm:FormGroup = new FormGroup({});
   loader: boolean = false;
   tempFile: any;
+  fieldTextType: boolean = true;
+  repeatFieldTextType: boolean = true;
 
   @Input() public clientInfo:any;
   @Output() public closeModel: EventEmitter<void> = new EventEmitter<void>();
@@ -25,7 +27,6 @@ export class AddclientComponent implements OnInit {
     } else{
       this.initialForm();
     }
-   
   }
 
   initialForm(clientObj: any = null) {
@@ -35,6 +36,8 @@ export class AddclientComponent implements OnInit {
         lastName: ["", Validators.required],
         email: ["", Validators.required],
         contact: ["", Validators.required],
+        password: ["", Validators.required],
+        confirmpassword: ["", Validators.required],
         clientId: [null],
         addedOn: []
       });
@@ -44,6 +47,8 @@ export class AddclientComponent implements OnInit {
         lastName: [clientObj.lastName, Validators.required],
         email: [clientObj.email, Validators.required],
         contact: [clientObj.contact, Validators.required],
+        password: [clientObj.password, Validators.required],
+        confirmpassword: [clientObj.confirmpassword, Validators.required],
         clientId: [clientObj.clientId]
       });
     }
@@ -52,4 +57,13 @@ export class AddclientComponent implements OnInit {
   close() {
     this.closeModel.emit();
   }
+
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
+  }
+  toggleRepeatFieldTextType() {
+    this.repeatFieldTextType = !this.repeatFieldTextType;
+  }
+
+
 }
