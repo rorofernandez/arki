@@ -1,0 +1,79 @@
+
+body {
+    background: url('../assets/bg-page.jpg') no-repeat bottom right; 
+    height: 100vh;
+}
+
+.bg {
+    background-image: url('../assets/bg-arki.jpg'); 
+    background-size: cover;
+}
+
+h1 {
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: gravesend-sans,sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 2.5em !important;
+}
+
+.arkiheader {
+    margin-top: 5% !important;
+    text-align: center;
+    color: #fff;
+    font-size: 8em;
+    font-weight: 700 !important;
+}
+
+.form-group .input-group .input[type="text"]:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2em !important;
+    text-align: center;
+    width: 60% !important;
+}
+
+input {
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#loginpage .btn {
+    width: 100%;
+    font-family: gravesend-sans,sans-serif !important;;
+    font-weight: 400 !important;
+    font-style: normal;
+    font-size: 1.6em !important;
+    height: 60px;
+}
+
+.navbar-brand, .pgtitle {
+    font-family: gravesend-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em !important;
+    margin-right: 50px;
+}
+
+.pgtitle {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
