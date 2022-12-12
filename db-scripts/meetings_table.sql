@@ -9,4 +9,4 @@ mysql > CREATE TABLE MEETINGS (
 
 mysql> SHOW TABLES;
 
-mysql> DESC CLIENTS;
+mysql> DESC MEETINGS;
